@@ -1,0 +1,114 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+
+}
+
+.container>form {
+  color: blue;
+  width: 50%;
+  display: flex;
+  gap: 5px;
+  margin: 2rem auto;
+}
+
+.container>form>input {
+
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid grey;
+  border-radius: 5px 0 0 px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.container>form>button {
+  padding: 1rem;
+  width: 20%;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: rgb(35, 129, 184);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+}
+
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  /* Center todos horizontally */
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  /* Center items vertically */
+  gap: 1rem;
+  width: 50%;
+  /* Set the width to match the form */
+  background-color: rgb(234, 106, 132);
+  /* Apply the background color */
+  padding: 1rem;
+  /* Add padding for better visual appearance */
+  border-radius: 5px;
+  /* Add border-radius for rounded corners */
+}
+
+.todo>input {
+  width: 2rem;
+  height: 2rem;
+  flex: none;
+}
+
+.todo>p {
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.todo>button {
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-color: white;
+  /* Specify the desired color for the delete button */
+  color: crimson;
+  /* Specify the text color for the delete button */
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.todo>button:hover {
+  background-color: red;
+  /* Change background color on hover */
+  color: white;
+  /* Change text color on hover */
+  opacity: 0.8;
+
+}
+
+.textCut {
+  text-decoration: line-through;
+}
